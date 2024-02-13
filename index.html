@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="container bg-dark">
+    <h1 class="text-center mt-4 mb-4 text-white font-weight-bold">Konversi Suhu</h1>
+    <h5 class="text-center mt-4 mb-4 text-white">Fauzan Zulfa Ramadhan</h5>
+    <div class="card shadow">
+        <div class="card-header">
+            <p>Masukkan nilai suhu ke kotak dibawah, pilih konversi suhu yang diinginkan. Lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk suhu lain. </p>
+        </div>
+        <div class="card-body font-weight-bold">
+
+            <!-- Input Nilai Suhu -->
+            <div class="form-group">
+                <label for="nilai_suhu">Nilai Suhu:</label>
+                <input type="text" class="form-control" id="nilai_suhu" placeholder="Contoh: 36">
+            </div>
+
+            <!-- Satuan Suhu -->
+            <div class="form-group">
+                <label for="satuan_suhu">Satuan Suhu</label>
+                <select class="form-control" id="satuan_suhu" placeholder="Contoh: Suhu Celcius (C)">
+                    <option value="celsius">Suhu Celcius (C)</option>
+                    <option value="fahrenheit">Suhu Fahrenheit (F)</option>
+                    <option value="reamur">Suhu Reamur (R)</option>
+                    <option value="kelvin">Suhu Kelvin (K)</option>
+                </select>
+            </div>
+            
+            <!-- Konversi -->
+            <div class="form-group">
+                <label for="satuan_ke">Konversi Ke</label>
+                <select class="form-control" id="satuan_ke" placeholder="Contoh: Suhu Kelvin (K)">
+                    <option value="celsius">Suhu Celcius (C)</option>
+                  <option value="fahrenheit">Suhu Fahrenheit (F)</option>
+                  <option value="reamur">Suhu Reamur (R)</option>
+                  <option value="kelvin">Suhu Kelvin (K)</option>
+                </select>
+            </div>
+
+            <!-- Hasil -->
+            <div class="form-group">
+                <label for="hasil">Hasil:</label>
+                <input type="text" class="form-control" id="hasil" placeholder="Hasil Konversi" disabled value="">
+            </div>
+
+            <!-- Formula Suhu -->
+                <div class="form-group">
+                    <label for="formula_suhu">Formula:</label>
+                    <input type="text" class="form-control" id="formula_suhu" placeholder="Formula dari Konversi Suhu" disabled value="">
+                </div>
+        </div>
+
+        <!-- Button pada Halaman -->
+        <div class="card-footer text-center">
+            <button type="button" id="konversi" class="btn btn-outline-secondary">Konversi</button>
+            <button type="button" id="reset" class="btn btn-outline-secondary" >Reset</button>
+            <button type="button" id="reverse" class="btn btn-outline-secondary">Reverse</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
